@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="Zomato_API_parallel_Test  Suite" annotations="JDK" parallel="tests" >
+    <!--test  name="GetCategories_Suite">
+      <groups>
+        <define name="All">
+          <include name="positive"/>
+          <include name="negative"/>
+        </define>
+        <run>
+          <include name="All"/>
+        </run>
+      </groups>
+      <classes>
+        <class name="qubeCenimas.sharedBox_API.TestNg.Zomato_Api_TestNg"/>
+      </classes>
+    </test-->
+    <test  name="GetCategories_positive">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="qubeCenimas.sharedBox_API.TestNg.Zomato_Api_TestNg"/>
+        </classes>
+    </test>
+    <test  name="GetCategories_Negative">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="qubeCenimas.sharedBox_API.TestNg.Zomato_Api_TestNg"/>
+        </classes>
+    </test>
+</suite>
